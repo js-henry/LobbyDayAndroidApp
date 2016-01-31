@@ -21,22 +21,17 @@ package com.sasha_henry.lobbyday;
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.support.v4.app.Fragment;
 import android.widget.ListView;
-import android.view.MotionEvent;
-import android.view.GestureDetector;
 import android.support.v4.view.GestureDetectorCompat;
-import android.widget.TextView;
-import android.widget.Toast;
 
 
 // For backwards compatibility, this class should extend android.support.v4.app.Fragment
 // (not android.app.Fragment).
-public class FirstFragment extends Fragment implements GestureDetector.OnGestureListener {
+public class FirstFragment extends Fragment {
     Boolean isTestOutput = false;
 
     private GestureDetectorCompat gestureDetector;
@@ -76,9 +71,6 @@ public class FirstFragment extends Fragment implements GestureDetector.OnGesture
     public void onViewCreated(View view, Bundle savedInstanceState) {
         firstFragListView = (ListView) view.findViewById(R.id.first_frag_listview);
 
-        //check syntax
-        this.gestureDetector = new GestureDetectorCompat(getContext(), this);
-
         //instantiate adapter with schedule list
         if (isTestOutput) { System.out.println("Fetching schedule in FirstFragment"); }
         scheduleAdapter = new ApptListAdapter(getContext(), mListener.getSchedule());
@@ -109,46 +101,7 @@ public class FirstFragment extends Fragment implements GestureDetector.OnGesture
     // Activities that communicate with this fragment must implement the following interface. This
     // ensures the activity will provide the methods called by the fragment.
     public interface FirstFragmentListener {
-        public ApptList getSchedule();
-    }
-
-    @Override
-    public boolean onDown(MotionEvent e) {
-        showInfoToast("onDown");
-        return false;
-    }
-
-    @Override
-    public void onShowPress(MotionEvent e) {
-        showInfoToast("onShowPress");
-    }
-
-    @Override
-    public boolean onSingleTapUp(MotionEvent e) {
-        showInfoToast("onSingleTapUp");
-        return false;
-    }
-
-    @Override
-    public boolean onScroll(MotionEvent e1, MotionEvent e2, float distanceX, float distanceY) {
-        showInfoToast("onScroll");
-        return false;
-    }
-
-    @Override
-    public void onLongPress(MotionEvent e) {
-        showInfoToast("onLongPress");
-    }
-
-    @Override
-    public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
-        showInfoToast("onFling");
-        return false;
-    }
-
-    //display a toast indicating which gesture has been chosen
-    public void showInfoToast(String msg){
-//        Toast.makeText(getActivity(),msg, Toast.LENGTH_SHORT).show();
+        ApptList getSchedule();
     }
 
 } //end class FirstFragment

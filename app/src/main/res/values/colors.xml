@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="sysBlack">#FF000000</color>
+
+    <color name="colorPrimary">#A62E05</color> <!-- dark orange-red (primary is also default for text)  -->
+    <color name="colorPrimaryDark">#FF000000</color> <!-- sysBlack (action bar) -->
+    <color name="colorAccent">#FF9605</color> <!-- orange placeholder for trace purposes -->
+
+    <color name="colorSecondary">#BE5D3D</color> <!-- medium orange-red (menu) -->
+    <color name="colorHighlight">#ED9274</color> <!-- lighter version of header color for highlighting -->
+    <color name="colorBackground">#FCF6FA</color> <!-- light pink (page background, menu text, separators) -->
+    <color name="colorLine">#C079AB</color> <!-- page wrapper purple (table borders)-->
+
+    <color name="colorTitleText">#BE5D3D</color> <!-- light orange-red (menu color)-->
+    <color name="colorMenuText">#FCE2D8</color> <!-- pinkish color for menu text and separators-->
+    <color name="colorLinkText">#8A4E78</color> <!-- purple for links-->
+    <color name="globalbackgroundColor">#FCF6FA</color> <!-- light pink (page background, menu text, separators) -->
+    <color name="description_bar_background_color">#BE5D3D</color> <!-- medium orange-red (menu) -->
+
+    <!-- colors for info toast -->
+    <color name="info_toast_background_color">#ce9abf</color> <!-- lighter version of purple (page wrapper & table borders)-->-->
+    <color name="info_toast_text_color">#333333</color> <!-- dark gray -->
+
+    <color name="navHeaderTextColor">#FCF6FA</color> <!-- light pink (page background, menu text, separators) -->
+    <color name="navHeaderBackgroundColor">#BE5D3D</color> <!-- medium orange-red (menu) -->
+    <color name="navHeaderSelectedBackgroundColor">#A62E05</color> <!-- dark orange-red  -->
+
+    <!-- toolbar colors are defined here and applied in custom ToolbarTheme theme (in styles.xml) -->
+    <color name="toolbarBkgdColor">#A62E05</color>  <!-- dark orange-red -->
+    <color name="toolbarPrimaryTextColor">#FCF6FA</color> <!-- light pink (page background, menu text, separators) -->
+    <color name="toolbarSecondaryTextColor">#FCF6FA</color> <!-- light pink (page background, menu text, separators) -->
+
+    <!-- navigation drawer colors are defined here and applied in custom NavDrawerTheme theme (in styles.xml) -->
+    <color name="navDrawerBkgdColor">#BE5D3D</color> <!-- medium orange-red (menu) -->
+    <color name="navDrawerTextColor">#FCF6FA</color> <!-- light pink (page background, menu text, separators) -->
+    <color name="navDrawerSecondaryTextColor">#C079AB</color> <!-- page wrapper purple (table borders)-->
+
+    <!-- page header colors (gives the title of each fragment) -->
+    <color name="page_header_text_color">#A62E05</color>  <!-- dark orange-red -->
+    <color name="page_header_color">#FCF6FA</color> <!-- light pink (page background, menu text, separators) -->
+
+    <color name="list_divider_color">#C079AB</color> <!-- page wrapper purple (table borders)-->
+    <!-- zebra color 1 for normal state (state_pressed="false", state_selected="false") -->
+    <color name="list_row_default_background1">#FCF6FA</color> <!-- light pink (page background, menu text, separators) -->
+    <!-- zebra color 1 for normal state (state_pressed="false", state_selected="false") -->
+    <color name="list_row_default_background2">#ffffff</color> <!-- plain white -->
+    <!-- zebra color 1 for activated items  -->
+    <color name="list_row_activated_background1">#ED9274</color> <!-- lighter version of header color for highlighting -->
+    <!-- zebra color 2 for activated items  -->
+    <color name="list_row_activated_background2">#ED9274</color> <!-- lighter version of header color for highlighting -->
+
+    <color name="list_header_background">#A62E05</color>  <!-- dark orange-red -->
+    <color name="list_header_text">#FCF6FA</color> <!-- light pink (page background, menu text, separators) -->
+    <drawable name="transparent">#00ffffff</drawable>
+
+    <!-- all these get #ED9274, the lighter version of header color for highlighting -->
+    <color name="list_row_pressed_background">#ED9274</color> <!-- pressed state (state_pressed = true) -->
+    <color name="list_row_selected_background">#ED9274</color> <!-- selected state (state_selected = true) -->
+    <color name="list_text_color_focused">#ED9274</color> <!-- focused state (state_focused = true) -->
+    <color name="list_row_checked_background">#ED9274</color> <!-- state_checked="true" -->
+
+    <!-- pressed state (state_selected = true) -->
+    <color name="list_text_color_pressed">#C079AB</color> <!-- page wrapper purple (table borders)-->
+    <!-- state_selected="true" -->
+    <color name="list_text_color_selected">#A62E05</color> <!-- dark orange-red -->
+    <!-- state_checked="true" -->
+    <color name="list_text_color_checked">#000000</color>
+
+
+    <!-- used? -->
+    <color name="altercolor3">#C079AB</color> <!-- page wrapper purple (table borders)-->
+    <drawable name="altercolor1">#ffffffff</drawable>
+    <drawable name="altercolor2">#ff000000</drawable>
+    <color name="list_text_color_default">#000000</color><!-- normal state (no state defined) -->
+
+
+</resources>

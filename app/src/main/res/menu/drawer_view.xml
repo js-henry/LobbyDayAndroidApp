@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item
+            android:id="@+id/nav_first_fragment"
+            android:title="@string/first_nav_title_string"
+            android:checkable="true"
+            />
+    <item
+            android:id="@+id/nav_second_fragment"
+            android:title="@string/second_nav_title_string"
+            android:checkable="true"
+        />
+        <item
+            android:id="@+id/nav_third_fragment"
+            android:title="@string/third_nav_title_string"
+            android:checkable="true"
+            />
+        <item
+            android:id="@+id/nav_fourth_fragment"
+            android:checkable="true"
+            android:title="@string/fourth_nav_title_string"
+            />
+        <item
+            android:id="@+id/nav_fifth_fragment"
+            android:checkable="true"
+            android:title="@string/fifth_nav_title_string"
+            />
+</menu>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <TextView
+        android:id="@+id/list_item_appt_text1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="2dp"
+        android:textColor="@drawable/list_text_color_selector"
+        android:duplicateParentState="true"
+        android:text="@string/list_item_appt_text1_string"
+        android:layout_weight="7"
+        android:textAppearance="@style/mediumText"
+        android:layout_gravity="left"
+        android:background="@drawable/lrborder"
+        />
+    <TextView
+        android:id="@+id/list_item_appt_text2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:textColor="@drawable/list_text_color_selector"
+        android:duplicateParentState="true"
+        android:text="@string/list_item_appt_text2_string"
+        android:layout_weight="17"
+        android:textAppearance="@style/mediumText"
+        android:layout_gravity="left"
+        android:background="@drawable/lrborder"
+        />
+    <TextView
+        android:id="@+id/list_item_appt_text3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:textColor="@drawable/list_text_color_selector"
+        android:duplicateParentState="true"
+        android:text="@string/list_item_appt_text3_string"
+        android:layout_weight="5"
+        android:textAppearance="@style/mediumText"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/lrborder"
+        android:textAlignment="center" />
+    <TextView
+        android:id="@+id/list_item_appt_text4"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:textColor="@drawable/list_text_color_selector"
+        android:duplicateParentState="true"
+        android:text="@string/list_item_appt_text4_string"
+        android:layout_weight="6"
+        android:textAppearance="@style/mediumText"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/lrborder"
+        android:textAlignment="center" />
+    <TextView
+        android:id="@+id/list_item_appt_text5"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:paddingLeft="2dp"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:textColor="@drawable/list_text_color_selector"
+        android:duplicateParentState="true"
+        android:text="@string/list_item_appt_text5_string"
+        android:layout_weight="8"
+        android:textAppearance="@style/mediumText"
+        android:layout_gravity="right"
+        android:background="@drawable/lrborder"
+        />
+</LinearLayout>
+    <!-- android:textColor="@drawable/list_item_text_color_selector" applies custom color to selected item.
+         It must be added to each TextView, not the root RelativeLayout.
+         The duplicateParentState attribute on this TextView, in conjunction with the color state list
+         used in the textColor attribute, causes its text color to change when its parent is checked or
+         unchecked.
+    -->

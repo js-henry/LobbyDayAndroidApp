@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/first_frag_linear_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:showDividers="middle"
+    android:divider="?android:dividerHorizontal"
+    tools:context="com.sasha_henry.lobbyday.FirstFragment"
+    >
+
+    <!-- a header for the list of appointments -->
+    <include
+        layout="@layout/list_header_appt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_header_height"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        />
+
+    <ListView android:id="@+id/first_frag_listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbarStyle="outsideOverlay"
+        android:choiceMode="none"
+        android:clickable="false"
+        android:listSelector="@android:color/transparent"
+        android:dividerHeight="2dp"
+        android:divider="@color/list_divider_color"
+        />
+</LinearLayout>
+
+

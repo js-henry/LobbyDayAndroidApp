@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- define base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item> <!-- minimized header color -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="actionMenuTextColor">@color/navDrawerTextColor</item> <!-- no effect -->
+    </style>
+
+    <!-- AppCompat uses white for toolbar text color unless changed by extending theme to custom theme -->
+    <!-- define toolbar theme (applied in Toolbar.xml) -->
+    <style name="ToolbarTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:background">@color/toolbarBkgdColor</item>
+        <!-- color for name of activity (primary text toolbar) -->
+        <item name="android:textColorPrimary">@color/toolbarPrimaryTextColor</item>
+        <!-- color for subtitle and icons (3-button or hamburger) -->
+        <item name="android:textColorSecondary">@color/toolbarSecondaryTextColor</item>
+        <!-- color for all other text, including menu (also activity name when minimized) -->
+        <item name="android:textColor">@color/navDrawerTextColor</item>
+        <item name="android:textSize">@dimen/toolbar_title_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- define navigation drawer theme (applied in Activity_main.xml) -->
+    <style name="NavDrawerTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- background color for whole nav drawer -->
+        <item name="android:windowBackground">@color/navDrawerBkgdColor</item>
+        <!-- color for name of menu items (change to selector?) -->
+        <item name="android:textColorPrimary">@color/navDrawerTextColor</item>
+        <item name="android:textSize">@dimen/nav_item_text_size</item>
+        <!-- color for icons -->
+        <item name="android:textColorSecondary">@color/navDrawerSecondaryTextColor</item> -->
+    </style>
+
+    <!-- title bar on each page -->
+    <style name="PageHeaderStyle">
+        <item name="android:background">@color/page_header_color</item>
+        <item name="android:textColor">@color/page_header_text_color</item>
+        <item name="android:textSize">@dimen/page_header_text_size</item>
+    </style>
+
+    <!-- text styling -->
+    <style name="mediumText" >
+        <item name="android:textSize">18sp</item>
+        <item name="android:typeface">sans</item>
+    </style>
+
+</resources>
+    <!-- <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar"> disables the default
+    ActionBar so the Toolbar can be used as an ActionBar -->

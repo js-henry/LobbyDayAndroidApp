@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">LobbyDay</string>
+
+    <string name="nav_header_text"></string> <!-- nav header actually displays no text -->
+    <string name="toolbar_title_textview_text">Lobby Day</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <string name="first_nav_title_string">Schedule</string>
+    <string name="second_nav_title_string">Add by District</string>
+    <string name="third_nav_title_string">Add by Legislator</string>
+    <string name="fourth_nav_title_string">Add by Team</string>
+    <string name="fifth_nav_title_string">Add by Time</string>
+
+    <string name="nav_sub_title_string">Add Appointments</string>
+
+    <string name="list_item_appt_text1_string">time</string>
+    <string name="list_item_appt_text2_string">legislator</string>
+    <string name="list_item_appt_text3_string">district</string>
+    <string name="list_item_appt_text4_string">team</string>
+    <string name="list_item_appt_text5_string">site</string>
+
+    <string name="list_header_appt_text1_string">time</string>
+    <string name="list_header_appt_text2_string">legislator</string>
+    <string name="list_header_appt_text3_string">dist</string>
+    <string name="list_header_appt_text4_string">team</string>
+    <string name="list_header_appt_text5_string">site</string>
+
+    <string name="list_item_team_t1_text">teams</string>
+    <string name="list_header_team_t1_text">Team Number -- Team Lead Name</string>
+
+    <string name="first_fragment_title">Schedule of Appointments</string>
+    <string name="first_fragment_info">This page displays a schedule created from the appointments you selected on the other pages.</string>
+    <string name="second_fragment_title">Add Districts to Schedule</string>
+    <string name="second_fragment_info">If a number is highlighted, all appointments assigned to that district are already on your schedule. A click will add or remove all the district\'s appointments.</string>
+    <string name="third_fragment_title">Add Legislators to Schedule</string>
+    <string name="third_fragment_info">Highlighted appointments are on the schedule. Click on any appointment to add (or remove) it from your schedule.</string>
+    <string name="fourth_fragment_title">Add Teams to Schedule</string>
+    <string name="fourth_fragment_info">Click on a team to add or remove all the team\'s appointments from your schedule.</string>
+    <string name="fifth_fragment_title">Add or Remove Appointments</string>
+    <string name="fifth_fragment_info">Highlighted appointments are on the schedule. Click on any appointment to add (or remove) it from your schedule.</string>
+
+</resources>

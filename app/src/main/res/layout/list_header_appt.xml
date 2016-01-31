@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_header_background"
+    >
+
+    <TextView
+        android:id="@+id/list_header_appt_text1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="2dp"
+        android:duplicateParentState="true"
+        android:text="@string/list_header_appt_text1_string"
+        android:textAppearance="@style/mediumText"
+        android:layout_weight="7"
+        android:background="@drawable/lrborder"
+        android:textColor="@color/list_header_text"
+        android:gravity="center_vertical" />
+    <TextView
+        android:id="@+id/list_header_appt_text2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:text="@string/list_header_appt_text2_string"
+        android:textAppearance="@style/mediumText"
+        android:layout_weight="17"
+        android:background="@drawable/lrborder"
+        android:textColor="@color/list_header_text"
+        android:gravity="center_vertical" />
+    <TextView
+        android:id="@+id/list_header_appt_text3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:text="@string/list_header_appt_text3_string"
+        android:textAppearance="@style/mediumText"
+        android:layout_weight="5"
+        android:background="@drawable/lrborder"
+        android:textAlignment="center"
+        android:textColor="@color/list_header_text"
+        android:gravity="center_vertical" />
+    <TextView
+        android:id="@+id/list_item_header_text4"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:text="@string/list_header_appt_text4_string"
+        android:textAppearance="@style/mediumText"
+        android:layout_weight="6"
+        android:background="@drawable/lrborder"
+        android:textAlignment="center"
+        android:textColor="@color/list_header_text"
+        android:gravity="center_vertical" />
+    <TextView
+        android:id="@+id/list_header_appt_text5"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:paddingLeft="2dp"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:text="@string/list_header_appt_text5_string"
+        android:textAppearance="@style/mediumText"
+        android:layout_weight="8"
+        android:background="@drawable/lrborder"
+        android:textColor="@color/list_header_text"
+        android:gravity="center_vertical" />
+</LinearLayout>

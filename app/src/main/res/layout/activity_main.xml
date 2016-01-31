@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- DrawerLayout with two children at the root  -->
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- the normal screen contents, excluding the navigation drawer  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- ActionBar (displayed at the top of the screen) -->
+        <include
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/page_header_height" >
+
+            <!-- page header -->
+            <!-- background color, text color, & text size are all covered in PageHeaderStyle -->
+            <TextView
+                android:id="@+id/main_header_textview"
+                android:theme="@style/PageHeaderStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/first_fragment_title"
+                android:gravity="center_vertical|center_horizontal"
+                />
+        </RelativeLayout>
+
+        <!-- frame to load fragments -->
+        <FrameLayout
+            android:id="@+id/flContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </FrameLayout>
+    <!-- normal screen contents end here -->
+    </LinearLayout>
+
+    <!-- the navigation drawer comes from the left (note that "android:layout_gravity" should be set to "start" -->
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nvView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/drawer_view"
+        app:theme="@style/NavDrawerTheme"
+        />
+
+</android.support.v4.widget.DrawerLayout>
+
+<!-- could include the header with
+        app:headerLayout="@layout/nav_header"
+     but I think it looks better without -->

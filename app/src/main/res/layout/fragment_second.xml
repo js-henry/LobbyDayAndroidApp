@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/second_frag_linear_layout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:showDividers="middle"
+    android:divider="?android:dividerHorizontal"
+    tools:context="com.sasha_henry.lobbyday.SecondFragment"
+    >
+
+    <GridView
+        android:id="@+id/second_frag_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnWidth="60dp"
+        android:numColumns="auto_fit"
+        android:verticalSpacing="5dp"
+        android:horizontalSpacing="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center"
+        android:choiceMode="multipleChoice"
+        android:clickable="true"
+        android:background="@color/list_divider_color"
+        android:drawSelectorOnTop="true"
+        />
+
+</LinearLayout>

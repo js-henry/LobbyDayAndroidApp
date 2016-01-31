@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:id="@+id/list_header_team_text1"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:textAppearance="@style/mediumText"
+        android:background="@color/list_header_background"
+        android:text="@string/list_header_team_t1_text"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="@color/list_header_text"
+
+        />
+
+</LinearLayout>
+    <!-- android:textColor="@drawable/list_item_text_selector" applies custom color to selected item.
+         It must be added to each TextView, not the root RelativeLayout.
+         The duplicateParentState attribute on this TextView, in conjunction with the color state list
+         used in the textColor attribute, causes its text color to change when its parent is checked or
+         unchecked.
+    -->
